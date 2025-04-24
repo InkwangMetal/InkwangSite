@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&family=Jua&family=Noto+Serif+KR:wght@600&display=swap');
+@import '../scss/_variables.scss';
+// @font-face {
+//     font-family: 'NanumSquareB';
+//     src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareB.woff2') format('woff2'),
+//         url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareB.woff') format('woff');
+// }
+// @font-face {
+//     font-family: 'NanumSquareR';
+//     src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff2') format('woff2'), 
+//         url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff')format('woff');
+// }
+
+$desktop: "(min-width: 992px) and (max-width: 1215px)";
+$mobile : "(max-width: 575px)";
+
+.content{
+    flex: 1;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.side_com{
+    display: flex;
+    // height: 680px;
+    width: 100%;
+    margin: 0 150px;
+    @media ($mobile) {
+        overflow: hidden;
+        margin: 0 0;
+    }
+    .company{
+        // height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        width: 80%;
+        @media ($mobile) {
+            overflow: hidden;
+            margin: 100px 10%;
+        }
+
+        #con1{
+            display: flex;
+            gap: 10px;
+            border-bottom: 2px solid #d4d4d4;
+            width: 480px;
+            height: 100px;
+
+            span{
+                font-size: 30px;
+                margin-top: 43px;
+            }
+
+            #tit{
+                font-size: 30px;
+                font-family: $logo-font;
+                margin-top: 40px;
+                height: 80px;
+                letter-spacing: 4px;
+            }
+        }
+        .con_img{
+            display: flex;
+            @media ($mobile) {
+                display: flex;
+                flex-direction: column;
+            }
+            #con2{
+                position: relative;
+                margin-top: 20px;
+                font-size: 16px;
+                width: 480px;
+                line-height: 2.5rem;
+                text-align: left;
+                @media ($mobile) {
+                    width: 100%;
+                    overflow: auto;
+                    height: 100%;
+                }
+
+                pre{
+                    font-family: 'NanumSquareR';
+
+                    b{
+                        font-family: 'NanumSquareB';
+                    }
+                }
+
+                
+                img{
+                    filter: brightness(112%);
+                    width: 430px;
+                    height: 400px;
+                    margin-left: 50px;
+                    z-index: 1;
+                    @media ($mobile) {
+                        margin: 0 5%;
+                        width: 100%;
+                    }
+                }
+                
+                
+                #sign{
+                    font-family: 'NanumSquareB';
+                    text-align: right;
+                    width: 100%;
+                    position: absolute;
+                    font-size: 20px;
+                    @media ($mobile) {
+                        text-align: right;
+                        left: 0;
+                        width: 100%;
+                    }
+
+                    span{
+                        color: #7b7b7b;
+                        font-size: 15px;
+                    }
+                }
+
+            }
+
+            .ikimg{
+                display: absolute;
+                img{
+                    width: 430px;
+                    height: 430px;
+                    margin-left: 50px;
+                    @media ($mobile) {
+                        margin: 10% 0;
+                    }
+                }
+            }
+        }
+    }
+}

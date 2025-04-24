@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import '../scss/_variables.scss';
+// @font-face {
+//     font-family: 'NanumSquareR';
+//     src: url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff2') format('woff2'), 
+//         url('../plugins/themify-icons/fonts/NanumSquare/NanumSquareR.woff')format('woff');
+// }
+$mobile : "(max-width: 575px)";
+
+.side_come{
+    display: flex;
+    height: 720px;
+    width: 100%;
+    margin: 0 150px;
+    .product{
+        margin-top: 50px;
+        height: 770px;
+        margin: 50px 160px;
+    }
+    .Side{
+        margin-top: 50px;
+    }
+}
+
+.box{
+   width: 890px;
+   height: 890px;
+   
+   .pr_img{
+       width: 640px;
+       height: 260px;
+   }
+
+   .pr_img_r{
+    width: 640px;
+    height: 260px;
+    }
+
+   .pr_fill{
+        display: flex;
+        flex-flow:column wrap;
+        gap: 20px;
+        width: 550px;
+        pre{
+            font-family: "NanumSquareR";
+            font-size: 17px;
+            line-height: 2.5rem;
+            #pr_div{
+                margin-left: 45px;
+                line-height: 2rem;
+                margin-top: -34px;
+            }
+
+        }
+        
+   }
+
+   .pr_fill2{
+        display: flex;
+        gap: 15px;
+        flex-wrap:column wrap;
+        height: 500px;
+        .pm_1{
+            width: 210px;
+            height: 195px;
+        }
+        .pm_2{
+            width: 210px;
+            height: 400px;
+        }
+        .pm_3{
+            width: 210px;
+            height: 190px;
+        }
+        .pm_4{
+            width: 210px;
+            height: 400px;
+        }
+
+        .rc_1{
+            width: 210px;
+            height: 190px;
+        }
+        .rc_2{
+            width: 210px;
+            height: 190px;
+        }
+        .rc_3{
+            width: 210px;
+            height: 190px;
+        }
+   }
+}
+
+@media ($mobile) {
+
+    .side_come{
+        margin: 0 0 150px 0;
+        .product{
+            margin: 50px 20px;
+            width: 100%;
+        }
+
+        .box {
+            margin: 0 0;
+            width: 100%;
+
+            .css-dnjqbo {
+                width: 100%;
+            }
+
+            .css-heg063-MuiTabs-flexContainer,
+            .css-k008qs{
+                width: 600px;
+            }
+
+            .css-19kzrtu{
+                padding: 10px 40px 10px 10px;
+            }
+
+            .pr_img{
+                width: 90%;
+            }
+            .pr_img_r{
+                width: 90%;
+                }
+
+            .pr_fill{
+                width: 100%;
+                
+                pre{
+                    width: 90%;
+                    white-space: pre-wrap;
+                }
+            }
+
+            .pr_fill2{
+                flex-direction: column;
+                display: contents;
+                gap: 5px;
+
+
+                .rc_1,
+                .rc_2,
+                .rc_3{
+                    width: 90%;
+                }
+
+                .pm_4,
+                .pm_3,
+                .pm_2,
+                .pm_1{
+                    margin-left: 5px;
+                    width: 45%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}

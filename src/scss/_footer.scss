@@ -1,0 +1,49 @@
+/* footer.css */
+@import '../scss/_variables.scss';
+$desktop: "(min-width: 992px) and (max-width: 1215px)";
+// @font-face {
+//     font-family: 'GmarketSansBold';
+//     src: url('../plugins/themify-icons/fonts/GmarketSansTTF/GmarketSansTTFBold.woff2') format('woff2'),
+//         url('../plugins/themify-icons/fonts/GmarketSansTTF/GmarketSansTTFBold.woff') format('woff');
+// }
+$mobile : "(max-width: 575px)";
+
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: $back-color;
+    color: rgb(184, 184, 184);
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+
+    .f_logo{
+        position: absolute;
+        color: rgb(219, 219, 219);
+        .f_img{
+            width:120px;
+            height: 38px;
+            margin: 13px 0 0 45%;
+
+            @media ($mobile) {
+                margin: 13px 0 0 8%;
+            }
+        }
+        
+    }
+
+    div{
+        #tel{
+            color: rgb(219, 219, 219);
+            margin-top: 20px;
+            text-align: right;
+            margin-right: 4%;
+            font-size: 20px;
+            font-family: 'GmarketSansBold';
+            font-weight: 500;
+        }
+    }
+
+    
+}
+
